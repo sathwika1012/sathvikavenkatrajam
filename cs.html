@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cyber Security Attendance</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+   
+<div class="wrapper">
+<div class="section">
+     <div>
+    <a href="fornt page.html"class="back-btn" onclick="history.back()">← Back</a>
+    </div>
+<h2 class="section-title"><i class="fa-solid fa-shield-alt"></i> CYBER SECURITY</h2>
+
+
+
+<div class="card">
+<h3>CS-1</h3>
+    <div class="controls">
+        <label>Date: <input type="date" id="date1"></label>
+        <label>Time: <input type="time" id="time1"></label>
+        <label>Hour: <select id="hour1">
+            <option value="Hour 1">Hour 1</option>
+            <option value="Hour 2">Hour 2</option>
+            <option value="Hour 3">Hour 3</option>
+            <option value="Hour 4">Hour 4</option>
+            <option value="Hour 5">Hour 5</option>
+            <option value="Hour 6">Hour 6</option>
+        </select></label>
+    </div>
+<textarea id="rolls1" placeholder="Enter Absence Numbers"></textarea>
+<div class="btn-row">
+<button class="btn gen-present" onclick="markAttendance('1','present')">Present</button>
+<button class="btn gen-absent" onclick="markAttendance('1','absent')">Absent</button>
+<button class="btn copy" onclick="copyText('1',currentMode['1'])">Copy</button>
+<button class="btn whatsapp" onclick="shareWhatsApp('1',currentMode['1'])">WhatsApp</button>
+</div>
+<div id="result1" class="result"></div>
+<div id="summary1" class="summary"></div>
+</div>
+
+<div class="card">
+<h3>CS-2</h3>
+    <div class="controls">
+        <label>Date: <input type="date" id="date2"></label>
+        <label>Time: <input type="time" id="time2"></label>
+        <label>Hour: <select id="hour2">
+            <option value="Hour 1">Hour 1</option>
+            <option value="Hour 2">Hour 2</option>
+            <option value="Hour 3">Hour 3</option>
+            <option value="Hour 4">Hour 4</option>
+            <option value="Hour 5">Hour 5</option>
+            <option value="Hour 6">Hour 6</option>
+        </select></label>
+    </div>
+<textarea id="rolls2" placeholder="Enter Absence Numbers"></textarea>
+<div class="btn-row">
+<button class="btn gen-present" onclick="markAttendance('2','present')">Present</button>
+<button class="btn gen-absent" onclick="markAttendance('2','absent')">Absent</button>
+<button class="btn copy" onclick="copyText('2',currentMode['2'])">Copy</button>
+<button class="btn whatsapp" onclick="shareWhatsApp('2',currentMode['2'])">WhatsApp</button>
+</div>
+<div id="result2" class="result"></div>
+<div id="summary2" class="summary"></div>
+</div>
+
+
+
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
